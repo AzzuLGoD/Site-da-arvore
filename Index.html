@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Árvore de Natal</title>
+</head>
+<body>
+    <header>
+        <h1>Oferta de Natal!</h1>
+    </header>
+    <main> 
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <video controls autoplay>
+                        <source src="arvorevid1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slide">
+                    <video controls autoplay>
+                        <source src="arvorevid2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="slide"><img src="arvorephoto1.jpg" alt="slide 1"></div>
+                <div class="slide"><img src="arvorephoto2.jpg" alt="slide 2"></div> 
+                <div class="slide"><img src="arvorephoto3.jpg" alt="slide 3"></div>  
+                <div class="slide"><img src="arvorephoto4.jpg" alt="slide 4"></div> 
+                <div class="slide"><img src="arvorephoto5.jpg" alt="slide 5"></div> 
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+        <section id="produtos">
+            <div class="produto" data-preco="57.90">
+                <h3>Árvore de Natal</h3>
+                <p>Árvore de Natal Retrátil de 1,80m.</p>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto" data-preco="57.90">
+        </section>
+        <section id="checkout" style="display:none;">
+            <h2>Checkout</h2>
+            <p id="total">Total: R$57.90</p>
+            <button id="finalizar">Finalizar Compra</button>
+        </section>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>
